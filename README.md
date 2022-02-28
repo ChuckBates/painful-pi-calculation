@@ -25,10 +25,17 @@ Given a precision of `0.001`, your function gets an approximation of `3.14094984
 func(0.001) ==> 1000
 ```
 
-Your goal is to determine just how many iterations are needed to get the same precision as the π constant of your chosen language. If your language doesn't have a constant, or if you are feeling particuarly adventurous, provided below are the first `100` digits of π
+Your goal is to determine just how many iterations are needed to get the same precision as the π constant of your chosen language. If your language doesn't have a constant below are the first `28` digits of π
 ```
-3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679
+3.1415926535897932384626433833
 ```
+
+Some possible additonal tasks:
+- Try determining the number of iterations for the highest possible precision data type in your language
+    - E.g. the `28` digit value above is the highest precision C# can do out of the box (without 3rd party libraries) using the `decimal` class.
+- Some form of parallelism to make the calculation faster
+- Track how much the difference between the calculated and constant values changes as more iterations are computed
+    - Graph?
 
 ---
 A few suggestions:
