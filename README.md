@@ -14,13 +14,13 @@ Use the [Leibniz Formula](http://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%8
 where the more elements of the series (or iterations of your loop) you add, the more precise your value of π will be. 
 
 ### Your Function Should: ###
-- Accept `precision` as a parameter to signify how close to your language π constant you need to be. (E.g. `0.001`)
-    - A `precision` of `0.001` means your computed value _must_ start with `3.14...`
+- Accept `precision` as a parameter. This is to signify how close to the π constant of your chosen language you need to be. 
+    - E.g. A `precision` of `0.001` means the absolute value of your computed valued subtracted from the constant value of π must be equal to or less than `precision`.
 - Return `iterations` as the number of iterations necessary to acheive the requested prescision.
-    - Optionally you could also return the computed value with the given precision for comparison with the constant value. 
+    - Optionally you could also return the computed value with the given precision for visual comparison with the constant value. 
 
 ### An Example: ###
-Given a precision of `0.001`, your function gets an approximation of `3.140592653839794` for π at the end of `1000` iterations. Since you are within `0.001` of `Math.Pi` you return:
+Given a precision of `0.001`, your function gets an approximation of `3.14094984654984` for π at the end of `1000` iterations. Since the absolute value of the difference of the computed and constant values is `0.0006428`, you are within `0.001` of `Math.Pi` and return:
 ```
 func(0.001) ==> 1000
 ```
