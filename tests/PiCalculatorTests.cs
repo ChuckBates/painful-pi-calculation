@@ -1,21 +1,14 @@
 using NUnit.Framework;
 using src;
 
-namespace tests;
-
-public class Tests
+namespace tests
 {
-    PiCalculator ClassUnderTest;
-    
-    [SetUp]
-    public void Setup()
-    {
-        ClassUnderTest = new PiCalculator();
-    }
-
+  public class Tests
+  {
     [Test]
     public void When_making_sure_bad_things_dont_happen()
     {
-        Assert.DoesNotThrow(() => ClassUnderTest.Calculate(0.001));
+      Assert.DoesNotThrow(() => PiCalculator.Calculate(0.001));
     }
+  }
 }

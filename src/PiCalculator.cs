@@ -1,11 +1,12 @@
-﻿namespace src;
-
-public class PiCalculator
+﻿namespace src
 {
-    public static void Main(string[] args) {}
+  public class PiCalculator
+  {
+    public static void Main(string[] args) { }
 
-    public ulong Calculate(double precision)
+    public static ulong Calculate(double precision)
     {
-        throw new NotImplementedException();
+      throw new NotImplementedException();
     }
+  }
 }
